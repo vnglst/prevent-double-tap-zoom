@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "release": "yarn build && np",
     "test": "echo \"Ok: no test specified\" && exit 0"
   },
   "keywords": [],
@@ -13,5 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "np": "^3.0.4"
   }
 }
