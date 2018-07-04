@@ -6,9 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "publish:patch": "yarn build && npm version patch && npm publish",
-    "publish:minor": "yarn build && npm version minor && npm publish",
-    "publish:major": "yarn build && npm version major && npm publish"
+    "publish": "yarn build && np",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Koen van Gilst <koen.vangilst@gmail.com> (https://koenvangilst.nl)",
