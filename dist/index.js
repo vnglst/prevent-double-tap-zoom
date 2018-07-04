@@ -2,8 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var preLastTouchStartAt = 0;
 var lastTouchStartAt = 0;
-var delay = 500;
-var preventDoubleTapZoom = function () {
+var preventDoubleTapZoom = function (delay) {
     document.addEventListener('touchstart', function () {
         preLastTouchStartAt = lastTouchStartAt;
         lastTouchStartAt = +new Date();

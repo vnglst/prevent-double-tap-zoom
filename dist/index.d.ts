@@ -1,2 +1,2 @@
-declare const preventDoubleTapZoom: () => void;
+declare const preventDoubleTapZoom: (delay: number) => void;
 export default preventDoubleTapZoom;
