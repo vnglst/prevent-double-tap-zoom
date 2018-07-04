@@ -1,8 +1,7 @@
 let preLastTouchStartAt = 0
 let lastTouchStartAt = 0
-const delay = 500
 
-const preventDoubleTapZoom = () => {
+const preventDoubleTapZoom = (delay: number) => {
   document.addEventListener('touchstart', () => {
     preLastTouchStartAt = lastTouchStartAt
     lastTouchStartAt = +new Date()
