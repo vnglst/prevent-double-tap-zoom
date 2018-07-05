@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "React UI elements for kids PWA games.",
   "main": "dist/index.js",
-  "source": "src/index.tsx",
+  "source": "src/index.ts",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "microbundle",
