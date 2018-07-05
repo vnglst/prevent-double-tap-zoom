@@ -20,10 +20,23 @@ const StyledButton = styled.button`
   }
 `
 
-interface IButtonProps {
+// interface IButtonProps extends React.HTMLProps<HTMLButtonElement> {
+interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
   className?: string
 }
+
+// class Button extends React.Component<IButtonProps, object> {
+//   render() {
+//     const { className, children, ...other } = this.props
+//     const classes = 'my-button ' + className
+//     return (
+//       <StyledButton className={classes} {...other}>
+//         {children}
+//       </StyledButton>
+//     )
+//   }
+// }
 
 const Button = ({ children, className, ...other }: IButtonProps) => {
   const classes = 'my-button ' + className
