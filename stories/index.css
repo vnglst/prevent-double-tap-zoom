@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+:root {
+  --blauw: #026781;
+  --oranje: #ef7d00;
+  --groen: #75b843;
+  --rood: #f53757;
+  --wit: #ffffff;
+  --geel: #ffd332;
+  --zwart: #022c39;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Lato', verdana, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-user-select: none; /* disable text selection for all elements */
+}
+
+body {
+  color: var(--wit);
+  background: var(--blauw);
+}
