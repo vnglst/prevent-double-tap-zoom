@@ -8,7 +8,7 @@
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
-    "release": "yarn build && np",
+    "release": "np",
     "test": "echo \"Ok: no test specified\" && exit 0",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
