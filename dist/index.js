@@ -1,23 +1,2 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var preLastTouchStartAt = 0;
-var lastTouchStartAt = 0;
-var preventDoubleTapZoom = function (_a) {
-    var delay = _a.delay;
-    document.addEventListener('touchstart', function () {
-        preLastTouchStartAt = lastTouchStartAt;
-        lastTouchStartAt = +new Date();
-    });
-    document.addEventListener('touchend', function (event) {
-        var touchEndAt = +new Date();
-        var target = event.target;
-        if (touchEndAt - preLastTouchStartAt < delay &&
-            event &&
-            target &&
-            target.click) {
-            event.preventDefault();
-            target.click();
-        }
-    });
-};
-exports.default = preventDoubleTapZoom;
+var e=require("react"),r=function(){return(r=Object.assign||function(e){for(var r,t=1,n=arguments.length;t<n;t++)for(var o in r=arguments[t])Object.prototype.hasOwnProperty.call(r,o)&&(e[o]=r[o]);return e}).apply(this,arguments)};module.exports=function(t){var n=t.children,o=t.className,a=function(e,r){var t={};for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&r.indexOf(n)<0&&(t[n]=e[n]);if(null!=e&&"function"==typeof Object.getOwnPropertySymbols){var o=0;for(n=Object.getOwnPropertySymbols(e);o<n.length;o++)r.indexOf(n[o])<0&&(t[n[o]]=e[n[o]])}return t}(t,["children","className"]);return e.createElement("button",r({className:"my-button "+o},a),n)};
+//# sourceMappingURL=index.js.map

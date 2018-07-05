@@ -1,21 +1,28 @@
 {
-  "name": "prevent-double-tap-zoom",
-  "version": "2.0.4",
-  "description": "No zooming on mobile when user double taps on a button/screen.",
+  "name": "kids-components-libary",
+  "version": "0.0.1",
+  "description": "React UI elements for kids PWA games.",
   "main": "dist/index.js",
+  "source": "src/Button.tsx",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "microbundle",
+    "dev": "microbundle watch",
     "release": "yarn build && np",
     "test": "echo \"Ok: no test specified\" && exit 0"
   },
   "keywords": [],
   "author": "Koen van Gilst <koen@koenvangilst.nl> (https://koenvangilst.nl)",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "microbundle": "^0.5.1",
+    "np": "^3.0.4",
     "typescript": "^2.9.2"
   },
-  "devDependencies": {
-    "np": "^3.0.4"
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }
