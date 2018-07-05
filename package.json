@@ -9,7 +9,9 @@
     "build": "microbundle",
     "dev": "microbundle watch",
     "release": "yarn build && np",
-    "test": "echo \"Ok: no test specified\" && exit 0"
+    "test": "echo \"Ok: no test specified\" && exit 0",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "Koen van Gilst <koen@koenvangilst.nl> (https://koenvangilst.nl)",
@@ -17,9 +19,16 @@
   "devDependencies": {
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
+    "awesome-typescript-loader": "^5.2.0",
     "microbundle": "^0.5.1",
     "np": "^3.0.4",
-    "typescript": "^2.9.2"
+    "typescript": "^2.9.2",
+    "@storybook/react": "^4.0.0-alpha.12",
+    "@storybook/addon-actions": "^4.0.0-alpha.12",
+    "@storybook/addon-links": "^4.0.0-alpha.12",
+    "@storybook/addons": "^4.0.0-alpha.12",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0"
   },
   "dependencies": {
     "react": "^16.4.1",
