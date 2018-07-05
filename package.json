@@ -1,6 +1,6 @@
 {
   "name": "kids-components-libary",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React UI elements for kids PWA games.",
   "main": "dist/index.js",
   "source": "src/index.ts",
