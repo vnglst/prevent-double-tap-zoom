@@ -26,6 +26,11 @@ storiesOf('Button', module)
       </span>
     </Button>
   ))
+  .add('disabled', () => (
+    <Button disabled onClick={action('clicked')}>
+      Not enabled
+    </Button>
+  ))
 
 storiesOf('BottomBar', module).add('with Home, Refresh and Settings', () => (
   <BottomBar value="home" onChange={action('menu item changed')}>
